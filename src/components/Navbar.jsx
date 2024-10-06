@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className="bg-blue-600 text-white py-4 shadow-md px-6">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-xl font-bold">
-                    <Link to="/">EnviroHealth</Link>
+                    <Link to="/">AECS</Link>
                 </div>
 
                 {/* Hamburger menu for mobile */}

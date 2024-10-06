@@ -4,7 +4,7 @@ const HomePage = () => {
     return (
         <div className="container mx-auto px-4 py-8">
             <div className="bg-white shadow-md rounded-lg p-6 mb-8">
-                <h1 className="text-5xl font-bold text-center text-green-600">EnviroHealth </h1>
+                <h1 className="text-5xl font-bold text-center text-green-600">AECS </h1>
                 <p className="mt-4 text-xl text-gray-700 text-center">
                     Get real-time insights into environmental data such as air quality, pollution levels, and more.
                 </p>
