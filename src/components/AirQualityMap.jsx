@@ -41,11 +41,11 @@ const AirQualityMap = () => {
             }
         };
 
-        // Fetch air quality data from API
+        // Fetch air quality data from API using HTTPS
         const fetchAirQualityData = async (lat, lon) => {
             try {
                 const response = await axios.get(
-                    `http://api.airvisual.com/v2/nearest_city?lat=${lat}&lon=${lon}&key=${apiKey}`
+                    `https://api.airvisual.com/v2/nearest_city?lat=${lat}&lon=${lon}&key=${apiKey}`
                 );
                 setAirData(response.data.data);
                 setLoading(false);
@@ -194,13 +194,10 @@ const AirQualityMap = () => {
                         <b>3. Conserve Energy:</b> Turn off lights and unplug devices when not in use to reduce power consumption.
                     </li>
                     <li>
-                        <b>4. Avoid Burning Waste:</b> Refrain from burning trash, leaves, or other materials, as they release harmful pollutants.
+                        <b>4. Avoid Burning Waste:</b> Refrain from burning garbage or leaves, which releases harmful pollutants into the air.
                     </li>
                     <li>
-                        <b>5. Support Clean Energy:</b> Support renewable energy sources like solar or wind power instead of fossil fuels.
-                    </li>
-                    <li>
-                        <b>6. Plant Trees:</b> Trees absorb carbon dioxide and improve air quality. Participate in tree plantation drives or plant trees in your community.
+                        <b>5. Plant Trees:</b> Trees help absorb carbon dioxide and provide oxygen, improving air quality.
                     </li>
                 </ul>
             </div>
